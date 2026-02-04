@@ -62,14 +62,8 @@ question_text = row["取穴部位"]
 correct = row["経穴名"]
 
 st.markdown("### ② 取穴部位（問題）")
-st.markdown(
-    f"""
-    <div style="padding:14px;border-radius:14px;border:2px solid #E6E6E6;font-size:18px;line-height:1.55;background:#ffffff;">
-        {question_text}
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+st.markdown("### ② 取穴部位（問題）")
+st.info(question_text)
 
 # --- ③ 解答欄（要穴内の経穴名をプルダウンで選んで解答） ---
 options = sorted(subset["経穴名"].unique().tolist())
