@@ -25,7 +25,7 @@ function draw(){
  el('specialText').hidden=!specialVisible;
  el('specialToggle').textContent=specialVisible?'非表示にする':'表示する';
  el('clinicalBox').hidden=!started;
- el('clinicalText').textContent=clinical.length?'資料に掲載された使用例：'+clinical.join('、'):'この経穴の個別の主治情報は、現在の参照資料では未確認です。';
+ el('clinicalText').textContent=clinical.length?clinical.join('、'):'この経穴の個別の主治情報は、現在の参照資料では未確認です。';
  el('clinicalText').hidden=!clinicalVisible;
  el('clinicalToggle').textContent=clinicalVisible?'非表示にする':'表示する';
  el('clinicalBox').querySelector('.disclaimer').hidden=!clinicalVisible;
